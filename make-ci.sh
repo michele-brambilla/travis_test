@@ -4,7 +4,7 @@ set -ev
 env | sort
 
 # Install packages
-sudo yum update
+#sudo yum update
 sudo yum install -y libhiredis-dev libev-dev libgtest-dev redis-server
 
 sudo yum install libzmq3-dev
