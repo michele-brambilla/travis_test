@@ -1,9 +1,16 @@
 # Enable C++ support
 language: cpp
 cache: ccache
+
+services:
+  - docker
+
+before_install:
+  - docker pull weldpua2008/docker-ansible:centos7_v1.9.2
+
 # OS
 sudo: required
-dist: trusty
+
 # Compiler selection
 compiler:
   - clang

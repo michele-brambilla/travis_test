@@ -4,10 +4,13 @@ set -ev
 env | sort
 
 # Install packages
-sudo apt-get update
-sudo apt-get install -y libhiredis-dev libev-dev libgtest-dev redis-server
+sudo yum update
+sudo yum install -y libhiredis-dev libev-dev libgtest-dev redis-server
 
-sudo apt-get install libzmq3-dev
+sudo yum install libzmq3-dev
+#sudo apt-get update
+#sudo apt-get install -y libhiredis-dev libev-dev libgtest-dev redis-server
+#sudo apt-get install libzmq3-dev
 
 pkg-config --libs libzmq
 pkg-config --cflags libzmq
