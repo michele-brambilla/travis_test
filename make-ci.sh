@@ -7,6 +7,8 @@ env | sort
 sudo apt-get update
 sudo apt-get install -y libhiredis-dev libev-dev libgtest-dev redis-server
 
+sudo apt-get install libzmq3-dev
+
 echo `pkg-config --cflags libzmq`
 
 ## Make gtest
