@@ -9,7 +9,8 @@ sudo apt-get install -y libhiredis-dev libev-dev libgtest-dev redis-server
 
 sudo apt-get install libzmq3-dev
 
-echo `pkg-config --cflags libzmq`
+pkg-config --libs libzmq
+pkg-config --cflags libzmq
 
 ## Make gtest
 #git clone https://github.com/google/googletest
